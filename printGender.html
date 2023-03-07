@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript">
+function printGender() {
+//retrive value from input by name
+debugger;
+var genders=document.getElementsByName("gender");
+ genders.forEach((gender) => {
+                if (gender.checked) {
+                    alert ("You selected:"+ gender.value);
+                }
+            });
+//alert("gender is: "+n.length);
+}
+</script>
+</head>
+<body>
+   <form name="form1">
+Enter gender:Male<input type="radio" name="gender" value="Male"/>
+FeMale<input type="radio" name="gender" value="Female"/>
+
+Another<input type="radio" name="gender" value="another"/>
+<br/>  
+<input type="button" onclick="printGender()" value="send"/>
+</form>
+</body>
+</html>
